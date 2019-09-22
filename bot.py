@@ -52,8 +52,7 @@ def cinco(message):
     bot.send_message(chatid, "Tambien existen los bots (como el que estás hablando ahora).")
     bot.send_message(chatid, "Estos son seguros y pueden hacer infinidad de cosas, por ejemplo, @getmediabot descarga cualquier cancion que le escribamos, @memerator_bot genera memes simples sólo a partir de una imagen, como la siguiente")
 
-
-    meme1=open('/temp/meme.png','rb')
+        meme1=open('./temp/meme.png','rb')
     bot.send_photo(chatid, meme1)
 
     bot.send_message(chatid, "Un par de últimas cosas. /Dime")
@@ -65,17 +64,17 @@ def seis(message):
     bot.send_message(chatid, "Todo el contenido que recibas está en una nube y puedes siempre volver a descargarlo en caso de borrarlo")
     bot.send_message(chatid, "Para borrar el caché sigue el siguiente tutorial")
 
-    vidcache=open('/temp/vidcache.mp4','rb')
+        vidcache=open('./temp/vidcache.mp4','rb')
     bot.send_video(chatid, vidcache)    
     
     bot.send_message(chatid, "Y por último, se pueden guardar gifs, mira este pequeño tutorial :3")
 
-    vidgif=open('/temp/vidgif.mp4','rb')
+        vidgif=open('./temp/vidgif.mp4','rb')
     bot.send_video(chatid, vidgif)
 
     bot.send_message(chatid, "Intenta!")
 
-    fry=open('/temp/fry.mp4','rb')
+        fry=open('./temp/fry.mp4','rb')
     bot.send_video(chatid, fry)
 
     bot.send_message(chatid, "Y eso es todo, bienvenido oficialmente a Telegram")
@@ -85,7 +84,7 @@ def send_photo(message):
     chatid=message.chat.id
         
     bot.send_message(chatid, "wolas ")
-    foto=open('/temp/hola.png','rb')
+        foto=open('./temp/hola.png','rb')
     bot.send_photo(chatid, foto)
 
 print("Ejecutandose")
