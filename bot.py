@@ -4,9 +4,7 @@ bot = telebot.TeleBot("872259319:AAHPKA8Csh6ERD0RMLN90zZZPzluFqoFI88")
 
 @bot.message_handler(commands=['start', 'help'])
 def send_welcome(message):
-
     chatid=message.chat.id
- 
 
     bot.send_message(chatid, "Hola, /clikeame")
 
@@ -59,7 +57,6 @@ def cinco(message):
     bot.send_photo(chatid, meme1)
 
     bot.send_message(chatid, "Un par de últimas cosas. /Dime")
-
 
 @bot.message_handler(commands=['Dime'])
 def seis(message):
