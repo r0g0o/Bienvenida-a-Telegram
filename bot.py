@@ -69,13 +69,11 @@ def seis(message):
     
     bot.send_message(chatid, "Y por último, se pueden guardar gifs, mira este pequeño tutorial :3")
 
-        vidgif=open('./temp/vidgif.mp4','rb')
-    bot.send_video(chatid, vidgif)
+    bot.send_video(chatid, open( './temp/vidgif.mp4', 'rb'))
 
     bot.send_message(chatid, "Intenta!")
 
-        fry=open('./temp/fry.mp4','rb')
-    bot.send_video(chatid, fry)
+    bot.send_video(chatid, open( './temp/fry.mp4', 'rb'))
 
     bot.send_message(chatid, "Y eso es todo, bienvenido oficialmente a Telegram")
 
@@ -84,8 +82,8 @@ def send_photo(message):
     chatid=message.chat.id
         
     bot.send_message(chatid, "wolas ")
-        foto=open('./temp/hola.png','rb')
-    bot.send_photo(chatid, foto)
+
+    bot.send_photo(chatid, open( './temp/hola.png', 'rb'))
 
 print("Ejecutandose")
 bot.polling()
