@@ -53,7 +53,7 @@ def cinco(message):
     bot.send_message(chatid, "Estos son seguros y pueden hacer infinidad de cosas, por ejemplo, @getmediabot descarga cualquier cancion que le escribamos, @memerator_bot genera memes simples sólo a partir de una imagen, como la siguiente")
 
 
-    meme1=open('/Users/fncg6/OneDrive/Escritorio/pruebas programar/Bot Telegram/temp/meme.png','rb')
+    meme1=open('/temp/meme.png','rb')
     bot.send_photo(chatid, meme1)
 
     bot.send_message(chatid, "Un par de últimas cosas. /Dime")
