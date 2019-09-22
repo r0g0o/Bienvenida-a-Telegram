@@ -65,7 +65,7 @@ def seis(message):
     bot.send_message(chatid, "Todo el contenido que recibas está en una nube y puedes siempre volver a descargarlo en caso de borrarlo")
     bot.send_message(chatid, "Para borrar el caché sigue el siguiente tutorial")
 
-    vidcache=open('/Users/fncg6/OneDrive/Escritorio/pruebas programar/Bot Telegram/temp/vidcache.mp4','rb')
+    vidcache=open('/temp/vidcache.mp4','rb')
     bot.send_video(chatid, vidcache)    
     
     bot.send_message(chatid, "Y por último, se pueden guardar gifs, mira este pequeño tutorial :3")
