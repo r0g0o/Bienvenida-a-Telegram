@@ -1,6 +1,8 @@
 import telebot
-
-bot = telebot.TeleBot("872259319:AAHPKA8Csh6ERD0RMLN90zZZPzluFqoFI88")
+from flask import flask, request
+import os
+TOKEN = "872259319:AAHPKA8Csh6ERD0RMLN90zZZPzluFqoFI88"
+bot = telebot.TeleBot(token=TOKEN)
 
 @bot.message_handler(commands=['start', 'help'])
 def send_welcome(message):
@@ -85,5 +87,20 @@ def send_photo(message):
     bot.send_photo(chatid, open( './temp/hola.png', 'rb'))
 
 print("Ejecutandose")
-bot.polling()
+#bot.polling()
+@server.route('/' + TOKEN, methods=['POST'])
+def getMessage():
+    bot.process_new_updates([telebot.types.Update.de_json(request.stream.read().decode("utf-8"))])
+    return "!", 200
+
+
+@server.route("/")
+def webhook():
+    bot.remove_webhook()
+    bot.set_webhook(url='https://your_heroku_project.com/' + TOKEN)
+    return "!", 200
+
+
+if __name__ == "__main__":
+    server.run(host="0.0.0.0", port=int(os.environ.get('PORT', 5000)))
 
