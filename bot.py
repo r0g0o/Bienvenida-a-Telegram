@@ -1,8 +1,10 @@
 import telebot
 from flask import flask, request
 import os
+
 TOKEN = "872259319:AAHPKA8Csh6ERD0RMLN90zZZPzluFqoFI88"
 bot = telebot.TeleBot(token=TOKEN)
+server = Flask(__name__)
 
 @bot.message_handler(commands=['start', 'help'])
 def send_welcome(message):
