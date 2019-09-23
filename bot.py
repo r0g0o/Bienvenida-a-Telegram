@@ -2,8 +2,8 @@ import telebot
 from flask import Flask, request
 import os
 
-TOKEN = "872259319:AAHPKA8Csh6ERD0RMLN90zZZPzluFqoFI88"
-bot = telebot.TeleBot(token=TOKEN)
+
+bot = telebot.TeleBot("872259319:AAHPKA8Csh6ERD0RMLN90zZZPzluFqoFI88")
 server = Flask(__name__)
 
 @bot.message_handler(commands=['start', 'help'])
@@ -90,7 +90,7 @@ def send_photo(message):
 
 print("Ejecutandose")
 """
-@server.route('/' + TOKEN, methods=['POST'])
+@server.route('/' + "872259319:AAHPKA8Csh6ERD0RMLN90zZZPzluFqoFI88", methods=['POST'])
 def getMessage():
     bot.process_new_updates([telebot.types.Update.de_json(request.stream.read().decode("utf-8"))])
     return "!", 200
@@ -99,7 +99,7 @@ def getMessage():
 @server.route("/")
 def webhook():
     bot.remove_webhook()
-    bot.set_webhook(url='https://bienvenidatelegram.herokuapp.com/' + TOKEN)
+    bot.set_webhook(url='https://bienvenidatelegram.herokuapp.com/' + "872259319:AAHPKA8Csh6ERD0RMLN90zZZPzluFqoFI88")
     return "!", 200
 
 
