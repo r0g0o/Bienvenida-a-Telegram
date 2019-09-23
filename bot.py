@@ -64,7 +64,7 @@ def seis(message):
     bot.send_message(chatid, "Todo el contenido que recibas está en una nube y puedes siempre volver a descargarlo en caso de borrarlo")
     bot.send_message(chatid, "Para borrar el caché sigue el siguiente tutorial")
 
-    bot.send_video(chatid, open(' ./temp/Vidcache.mp4', 'rb'))    
+    #bot.send_video(chatid, open(' ./temp/Vidcache.mp4', 'rb'))    
     
     bot.send_message(chatid, "Y por último, se pueden guardar gifs, mira este pequeño tutorial :3")
 
