@@ -1,5 +1,5 @@
 import telebot
-from Flask import Flask, request
+import Flask, request
 import os
 
 bot = telebot.TeleBot("872259319:AAHPKA8Csh6ERD0RMLN90zZZPzluFqoFI88")
