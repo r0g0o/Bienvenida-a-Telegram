@@ -25,13 +25,33 @@ def uno(update, context):
     
 def dos(update, context):
     update.message.reply_text('Incluso hay stickers animados')
-    update.message.reply_text('Intenta mandar el emoji de un corazón')
-    
-def tres(update, context):
-    update.message.reply_text('Muy bien, luego investiga el resto de emojis que son animados. Ahora, explora algunos packs de stickers animados')
     update.message.reply_text('https://t.me/addstickers/HotCherry')
     update.message.reply_text('https://t.me/addstickers/CorgiMuffin')
     update.message.reply_text('/excelente !!') 
+
+def tres(update, context):
+    update.message.reply_text('Pues existen los grupos y los canales')
+    update.message.reply_text('En los grupos cualquiera puede hablar, como en @excelhechofacil') 
+    update.message.reply_text('Mientras que en los canales sólo recibes los mensajes, como en @zukulentosmemes') 
+    update.message.reply_text('Para buscar más grupos y canales entra a @ListaTelegram, @listadogram o @DirectorioTelegram, donde están filtrados por tópico')
+    update.message.reply_text('/genial !')
+    
+def cuatro(update, context):
+    update.message.reply_text('Tambien existen los bots (como el que estás hablando ahora).')
+    update.message.reply_text('Estos son seguros y pueden hacer infinidad de cosas, por ejemplo, @getmediabot descarga cualquier cancion que le escribamos, @memerator_bot genera memes simples sólo a partir de una imagen, como la siguiente')
+    update.message.reply_text('*foto')
+    update.message.reply_text('Un par de últimas cosas. /Dime')
+    
+def cuatro(update, context):
+    update.message.reply_text('Todo el contenido que recibas está en una nube y puedes siempre volver a descargarlo en caso de borrarlo')
+    update.message.reply_text('Para borrar el caché sigue el siguiente tutorial')
+    update.message.reply_text('*cargando vids*')
+    update.message.reply_text('*video')
+    update.message.reply_text('Y por último, se pueden guardar gifs, mira este pequeño tutorial :3')
+    update.message.reply_text('*otro vid')
+    update.message.reply_text('Intenta!')
+    update.message.reply_text('*último vid')
+    update.message.reply_text('Y eso es todo, esta es mi bienvenida (no) oficial a Telegram')
     
 def help(update, context):
     """Send a message when the command /help is issued."""
@@ -60,6 +80,9 @@ def main():
     dp.add_handler(CommandHandler("help", help))
     dp.add_handler(CommandHandler("clickeame", uno))
     dp.add_handler(CommandHandler("continua", dos))
+    dp.add_handler(CommandHandler("excelente", tres))
+    dp.add_handler(CommandHandler("genial", cuatro))
+    dp.add_handler(CommandHandler("dime", cinco))
 
 
 
