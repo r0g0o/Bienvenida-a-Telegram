@@ -12,6 +12,10 @@ TOKEN = '872259319:AAHPKA8Csh6ERD0RMLN90zZZPzluFqoFI88'
 
 # Define a few command handlers. These usually take the two arguments update and
 # context. Error handlers also receive the raised TelegramError object in error.
+
+def start(update, context):
+    update.message.reply_text('Hola, /clikeame')
+
 def uno(update, context):
     update.message.reply_text('En primer primer lugar, aca también sí hay stickers y están más ordenados. Agregalos!')
     update.message.reply_text('https://t.me/addstickers/sebaspack')
@@ -52,7 +56,7 @@ def main():
     dp = updater.dispatcher
 
     # on different commands - answer in Telegram
-    dp.add_handler(CommandHandler("start", "Hola, /clikeame"))
+    dp.add_handler(CommandHandler("start", start))
     dp.add_handler(CommandHandler("clickeame", uno))
     dp.add_handler(CommandHandler("continua", dos))
     dp.add_handler(CommandHandler("❤", tres))
