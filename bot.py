@@ -42,7 +42,7 @@ def cuatro(update, context):
     update.message.reply_text('*foto')
     update.message.reply_text('Un par de últimas cosas. /Dime')
     
-def cuatro(update, context):
+def cinco(update, context):
     update.message.reply_text('Todo el contenido que recibas está en una nube y puedes siempre volver a descargarlo en caso de borrarlo')
     update.message.reply_text('Para borrar el caché sigue el siguiente tutorial')
     update.message.reply_text('*cargando vids*')
