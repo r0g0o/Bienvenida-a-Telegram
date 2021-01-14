@@ -58,10 +58,10 @@ def main():
     dp = updater.dispatcher
 
     # on different commands - answer in Telegram
-    dp.add_handler(CommandHandler("start", start))
+    dp.add_handler(CommandHandler("start", start))"""
     dp.add_handler(CommandHandler("clickeame", uno))
     dp.add_handler(CommandHandler("continua", dos))
-    dp.add_handler(CommandHandler("❤", tres))
+    dp.add_handler(CommandHandler("❤", tres))"""
 
     # on noncommand i.e message - echo the message on Telegram
     dp.add_handler(MessageHandler(Filters.text, echo))
