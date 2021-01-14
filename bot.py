@@ -22,7 +22,17 @@ def uno(update, context):
     update.message.reply_text('https://t.me/addstickers/Meme_stickers')
     update.message.reply_text('https://t.me/addstickers/CDJMeme')
     update.message.reply_text('/continua')
-
+    
+def dos(update, context):
+    update.message.reply_text('Incluso hay stickers animados')
+    update.message.reply_text('Intenta mandar el emoji de un corazón')
+    
+def tres(update, context):
+    update.message.reply_text('Muy bien, luego investiga el resto de emojis que son animados. Ahora, explora algunos packs de stickers animados')
+    update.message.reply_text('https://t.me/addstickers/HotCherry')
+    update.message.reply_text('https://t.me/addstickers/CorgiMuffin')
+    update.message.reply_text('/excelente !!') 
+    
 def help(update, context):
     """Send a message when the command /help is issued."""
     update.message.reply_text('Help!')
@@ -49,6 +59,8 @@ def main():
     dp.add_handler(CommandHandler("start", start))
     dp.add_handler(CommandHandler("help", help))
     dp.add_handler(CommandHandler("clickeame", uno))
+    dp.add_handler(CommandHandler("continua", dos))
+    dp.add_handler(CommandHandler("❤", tres))
 
 
     # on noncommand i.e message - echo the message on Telegram
