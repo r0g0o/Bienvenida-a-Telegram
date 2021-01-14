@@ -14,8 +14,9 @@ TOKEN = '872259319:AAHPKA8Csh6ERD0RMLN90zZZPzluFqoFI88'
 # context. Error handlers also receive the raised TelegramError object in error.
 
 def start(update, context):
+    update.message.reply_text('Hola, mundo')
     update.message.reply_text('Hola, /clikeame')
-
+'''
 def uno(update, context):
     update.message.reply_text('En primer primer lugar, aca también sí hay stickers y están más ordenados. Agregalos!')
     update.message.reply_text('https://t.me/addstickers/sebaspack')
@@ -27,11 +28,12 @@ def dos(update, context):
     update.message.reply_text('Incluso hay stickers animados')
     update.message.reply_text('Intenta mandar el emoji de un corazón')
     
-def dos(update, context):
+def tres(update, context):
     update.message.reply_text('Muy bien, luego investiga el resto de emojis que son animados. Mientas, explora algunos packs de stickers animados')
     update.message.reply_text('https://t.me/addstickers/HotCherry')
     update.message.reply_text('https://t.me/addstickers/CorgiMuffin')
     update.message.reply_text('/excelente !!')
+'''
 
 def help(update, context):
     """Send a message when the command /help is issued."""
