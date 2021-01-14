@@ -39,18 +39,18 @@ def tres(update, context):
 def cuatro(update, context):
     update.message.reply_text('Tambien existen los bots (como el que estás hablando ahora).')
     update.message.reply_text('Estos son seguros y pueden hacer infinidad de cosas, por ejemplo, @getmediabot descarga cualquier cancion que le escribamos, @memerator_bot genera memes simples sólo a partir de una imagen, como la siguiente')
-    update.message.reply_text('*foto')
+    update.message.reply_photo(open('/temp/meme.png', 'rb'))
     update.message.reply_text('Un par de últimas cosas. /Dime')
     
 def cinco(update, context):
     update.message.reply_text('Todo el contenido que recibas está en una nube y puedes siempre volver a descargarlo en caso de borrarlo')
     update.message.reply_text('Para borrar el caché sigue el siguiente tutorial')
     update.message.reply_text('*cargando vids*')
-    update.message.reply_text('*video')
+    update.message.reply_video(open('/temp/vidcache.mp4', 'rb')
     update.message.reply_text('Y por último, se pueden guardar gifs, mira este pequeño tutorial :3')
-    update.message.reply_text('*otro vid')
+    update.message.reply_video(open('/temp/vidgif.mp4', 'rb')
     update.message.reply_text('Intenta!')
-    update.message.reply_text('*último vid')
+    update.message.reply_video(open('/temp/fry.mp4', 'rb')
     update.message.reply_text('Y eso es todo, esta es mi bienvenida (no) oficial a Telegram')
     
 def help(update, context):
