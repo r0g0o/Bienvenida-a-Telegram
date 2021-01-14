@@ -46,11 +46,11 @@ def cinco(update, context):
     update.message.reply_text('Todo el contenido que recibas está en una nube y puedes siempre volver a descargarlo en caso de borrarlo')
     update.message.reply_text('Para borrar el caché sigue el siguiente tutorial')
     update.message.reply_text('*cargando vids*')
-    update.message.reply_video(open('./temp/vidcache.mp4', 'rb')
+    update.message.reply_video(open('./temp/vidcache.mp4', 'rb'))
     update.message.reply_text('Y por último, se pueden guardar gifs, mira este pequeño tutorial :3')
-    update.message.reply_video(open('./temp/vidgif.mp4', 'rb')
+    update.message.reply_video(open('./temp/vidgif.mp4', 'rb'))
     update.message.reply_text('Intenta!')
-    update.message.reply_video(open('./temp/fry.mp4', 'rb')
+    update.message.reply_video(open('./temp/fry.mp4', 'rb'))
     update.message.reply_text('Y eso es todo, esta es mi bienvenida (no) oficial a Telegram')
     
 def help(update, context):
