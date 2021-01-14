@@ -60,7 +60,7 @@ def main():
     dp.add_handler(CommandHandler("help", help))
     dp.add_handler(CommandHandler("clickeame", uno))
     dp.add_handler(CommandHandler("continua", dos))
-    dp.add_handler(CommandHandler("❤", tres))
+
 
 
     # on noncommand i.e message - echo the message on Telegram
