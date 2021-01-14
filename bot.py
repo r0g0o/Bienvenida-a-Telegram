@@ -14,8 +14,14 @@ TOKEN = '872259319:AAHPKA8Csh6ERD0RMLN90zZZPzluFqoFI88'
 # context. Error handlers also receive the raised TelegramError object in error.
 def start(update, context):
     """Send a message when the command /start is issued."""
-    update.message.reply_text('Hi world!')
-    update.message.reply_text('XD')
+    update.message.reply_text('Hola, /clickeame')
+
+def uno(update, context):
+    update.message.reply_text('En primer primer lugar, aca también sí hay stickers y están más ordenados. Agregalos!')
+    update.message.reply_text('https://t.me/addstickers/sebaspack')
+    update.message.reply_text('https://t.me/addstickers/Meme_stickers')
+    update.message.reply_text('https://t.me/addstickers/CDJMeme')
+    update.message.reply_text('/continua')
 
 def help(update, context):
     """Send a message when the command /help is issued."""
@@ -42,6 +48,7 @@ def main():
     # on different commands - answer in Telegram
     dp.add_handler(CommandHandler("start", start))
     dp.add_handler(CommandHandler("help", help))
+    dp.add_handler(CommandHandler("clickeame", uno))
 
 
     # on noncommand i.e message - echo the message on Telegram
